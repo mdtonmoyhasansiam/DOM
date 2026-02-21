@@ -3,50 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DOM Tour</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 
     <style>
-        h1{
+        .color{
             color: brown;
+        }
+        .bold{
+            font-weight: bolder;
         }
     </style>
 </head>
 <body>
+    <div>
+        <h1 id="header">This is Header</h1>
+        <p class="text">Lorem ipsum dolor sit amet.</p>
+        <p class="text">Sunt at exercitationem ipsum voluptatem.</p>
+        <p class="text">Quidem harum ipsa dolores facilis?</p>
 
-    <main>
-        <h1>Hello DOM</h1>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-        </ul>
-    </main>
+        <button id="btn-set">Click, then change color & font weight</button>
+        <button id="btn-removed">Click, then removed color & font weight</button>
+    </div>
 
-     <!-- 22-1 -->
-    <script>
-        // 22-1
-        console.log("Hello JavaScript");
+    <div id="add-p-tag">
+        
+    </div>
 
-        // 22-2
-        const liCollection = document.getElementsByTagName("li");
-        for (const li of liCollection){
-            console.log(li);
-            console.log(li.innerText);
-        }
+    <div id="added-child-element">
 
-        // 22-2
-        const h1Collection = document.getElementsByTagName("h1");
-        for (const h1 of h1Collection){
-            console.log(h1);
-            console.log(h1.innerText)
-        }
+    </div>
 
 
-    </script>
-    
-     <!-- 22-1 -->
     <script src="script.js"></script>
 </body>
 </html>
